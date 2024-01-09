@@ -1,0 +1,64 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: normal;
+    color: $clr-grey;
+    font-family: 'Poppins', sans-serif;
+    @include mq(md){
+        font-size: 14px;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 51px;
+    color: #fff;
+    font-family: "Playfair Display";
+    font-style: italic;
+    max-width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 25px 0;
+
+    span {
+        color: $clr-mustard;
+        display: inline-block;
+    }
+    @include mq(xl){
+        font-size: 46px;
+    }
+    @include mq(md){
+        font-size: 40px;
+        line-height: 36px;
+    }
+@include mq(sm){
+    font-size: 28px;
+    line-height: normal;
+    max-width: 100%;
+}
+}
+
+h2 {
+    font-size: 35px;
+    line-height: normal;
+    font-weight: 500;
+    color: $clr-black;
+    padding-bottom: 20px;
+    @include mq(sm){
+        font-size: 22px;
+        line-height: normal;
+    }
+}

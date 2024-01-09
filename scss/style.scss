@@ -1,0 +1,565 @@
+/*global start*/
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-family: 'Playfair Display', serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+/*global end*/
+
+/*header start*/
+header.site-header {
+    background: transparent;
+    font-size: 18px;
+    padding: 14px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    transition: .3s;
+
+}
+
+.site-header .site-nav ul li a.active {
+    color: $clr-white;
+    border-bottom: 1px solid #fff;
+}
+
+.site-logo img {
+    width: 100%;
+    max-width: 160px;
+}
+
+.site-nav a {
+    padding: 8px 12px !important;
+    display: inline-block;
+    font-weight: 500;
+    color: $clr-white;
+
+    &:hover {
+        color: $clr-mustard;
+    }
+}
+
+
+.site-header {
+    padding: 10px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.closed-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: none !important;
+}
+
+header.site-header.sticky {
+    background: #dfaa1bf0;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding: 10px 0;
+    position: fixed;
+}
+
+header.site-header.sticky .site-nav a:hover {
+    color: $clr-white;
+}
+
+/*header end*/
+
+/*banner-css-start*/
+section.homebanner {
+    position: relative;
+    height: 500px;
+    background-image: url(../images/homebanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    object-fit: cover;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        display: inline-block;
+    }
+}
+
+.banner-content {
+    z-index: 2;
+    position: relative;
+
+    p {
+        color: $clr-white !important;
+    }
+}
+
+/*banner-css-end*/
+
+/*websitework-css-start*/
+section.websitework {
+    padding: 30px 0;
+}
+
+.websitework-content {
+    span {
+        font-weight: bold;
+        color: $clr-mustard;
+        margin-right: 10px;
+    }
+}
+
+.websitework-content p {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: $clr-black;
+        right: auto;
+        left: -10px;
+        top: 10px;
+    }
+}
+
+.websitework-picture {
+    border: 3px solid $clr-mustard;
+    padding: 15px;
+
+    img {
+        max-width: 100%;
+        border-radius: 10px 70px;
+        opacity: 1;
+        transition: 1s ease;
+
+        &:hover {
+            border-radius: 0 !important;
+            opacity: 0.5;
+            transition: 1s ease;
+        }
+    }
+}
+
+/*websitework-css-end*/
+
+/*hotels-css-start*/
+section.cuisine__main {
+    padding: 50px 0;
+}
+
+.cuisine__main .row.cuisine {
+    row-gap: 40px;
+}
+
+.row.cuisine {
+    padding: 30px 0;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.cuisine {
+    &__text {
+        padding: 50px 0;
+        text-align: justify;
+    }
+
+    &-btn {
+        a {
+            display: inline-block;
+            background: $clr-mustard;
+            padding: 14px 20px;
+            border-radius: 7px;
+            font-size: 16px;
+
+            &:hover {
+                color: $clr-mustard;
+                background: $clr-black;
+            }
+        }
+    }
+
+    &__picture {
+        position: relative;
+
+        img {
+            height: 416px;
+            object-fit: cover;
+        }
+
+        &::after {
+            position: absolute;
+            inset: 0;
+            background: rgb(0 0 0 / 54%);
+            height: 100%;
+            width: 100%;
+            content: '';
+        }
+    }
+
+    &__body {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__part {
+        position: absolute;
+        width: 100%;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-left: 40px;
+
+        p {
+            color: $clr-white;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        h4 {
+            color: $clr-mustard;
+            font-size: 21px;
+            margin-bottom: 0;
+            max-width: 70%;
+        }
+    }
+}
+
+.row.cuisine-space {
+    margin-top: 30px;
+}
+
+.cuisine__body {
+    transition: all 0.3s linear;
+}
+
+.cuisine__body:hover .cuisine__picture img {
+    transform: scale(1.5);
+}
+
+.cuisine__picture img {
+    height: 350px;
+    object-fit: cover;
+    transition: all 0.3s linear;
+}
+
+.cuisine__picture {
+    overflow: hidden;
+}
+
+/*hotels-css-end*/
+
+/*gambling-css-end*/
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
+button.accordion-button.collapsed,
+button.accordion-button {
+    color: #000;
+    font-size: 24px;
+    font-family: "Barlow";
+    background-color: $clr-mustard !important;
+    padding-left: 15px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $clr-black;
+}
+
+h2#headingTwo {
+    padding-bottom: 0;
+}
+
+.accordion-body span {
+    color: $clr-mustard;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/accordion-minus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.accordion-button::after {
+    background-image: url(../images/accordion-plus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+}
+
+/*gambling-css-start*/
+
+/*privacy-policy start*/
+.privacy__section {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/privacybanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: -1;
+    }
+}
+
+.privacy-policy {
+    padding: 40px 0;
+
+    .content-wrap {
+        li {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: normal;
+            color: $clr-grey;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+}
+
+.terms {
+    padding: 40px 0;
+
+    .content-wrap {
+        li {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: normal;
+            color: $clr-grey;
+            font-family: "Poppins", sans-serif;
+        }
+
+    }
+}
+
+.content-wrap {
+    h4 {
+        color: $clr-mustard;
+        font-size: 21px;
+        margin-bottom: 0;
+    }
+}
+
+/*privacy-policy end*/
+
+/*terms-conditon start*/
+.terms__section {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/termsbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 0;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: -1;
+    }
+}
+
+/*terms-conditon-end/
+
+/*footer-css-start*/
+.footer {
+    background-color: $clr-black;
+    padding: 50px 0;
+
+    &-logo {
+        max-width: 124px;
+    }
+
+    &-links {
+        a {
+            color: $clr-white;
+
+            &:hover {
+                color: $clr-mustard;
+            }
+        }
+
+        h2 {
+            color: $clr-white;
+        }
+    }
+
+    &-adresse {
+        h2 {
+            color: $clr-white;
+        }
+
+        p {
+            color: $clr-white;
+            font-size: 14px;
+        }
+    }
+
+    &-mails {
+        a {
+            color: $clr-white;
+            font-size: 14px;
+        }
+    }
+
+    &-mails {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mails-names {
+    gap: 16px;
+    display: flex;
+    align-items: end;
+}
+
+.social-signals {
+    margin-top: 25px;
+
+    i {
+        color: $clr-mustard;
+        border-radius: 30px;
+        font-size: 25px;
+        margin: 0 10px;
+        border: 1px solid $clr-mustard;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 36px;
+
+        &:hover {
+            color: $clr-white;
+        }
+    }
+}
+
+.footer_bottom {
+    border-top: 1px solid #fff;
+    padding: 10px;
+    margin: 30px 0;
+
+    p {
+
+        text-align: center;
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: $clr-mustard;
+            }
+        }
+    }
+}
+
+
+
+
+/*# sourceMappingURL=style.css.map */
