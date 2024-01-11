@@ -57,6 +57,7 @@ h2 {
     font-weight: 500;
     color: $clr-black;
     padding-bottom: 20px;
+    
     @include mq(sm){
         font-size: 22px;
         line-height: normal;

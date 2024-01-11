@@ -27,6 +27,12 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    section.trusted .trusted-inner .trusted-col {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 992px) {
 
     /*header start*/
@@ -201,6 +207,14 @@
     button.accordion-button.collapsed,
     button.accordion-button {
         font-size: 18px;
+    }
+
+    .collection-wrapper.onecess .row {
+        flex-direction: column-reverse;
+    }
+
+    section.collection-hotels .collection-wrapper .collection-about-photo img {
+        height: 250px;
     }
 }
 
