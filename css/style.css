@@ -756,6 +756,96 @@ body#gameOp .dropdown__section {
   padding: 50px 0;
 }
 
+section.hotel-bnr.about {
+  background: url(../images/aboutbnr.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  object-fit: cover;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  position: relative;
+  background-position: top;
+}
+
+.conatct-page {
+  padding: 50px;
+}
+.conatct-page .contact_us_f {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  padding: 50px;
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.conatct-page .contact_us_f h2 {
+  font-size: 37px;
+  line-height: 29px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: rgba(223, 170, 27, 0.9411764706);
+}
+.conatct-page .contact_us_f .form_div {
+  display: flex;
+}
+.conatct-page .contact_us_f .form_div input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 28px;
+  margin-right: 14px;
+}
+.conatct-page .contact_us_f textarea#w3review {
+  width: 100%;
+  padding: 16px;
+  margin-right: 14px;
+}
+.conatct-page .contact_us_f input#sub {
+  padding: 14px 50px;
+  background-color: rgba(223, 170, 27, 0.9411764706);
+  color: #fff;
+  border: none;
+  margin-top: 40px;
+  font-size: 16px;
+  border: 1px solid rgba(223, 170, 27, 0.9411764706);
+  transition: all 0.3s;
+}
+.conatct-page .contact_us_f input#sub:hover {
+  background-color: transparent;
+  color: rgba(223, 170, 27, 0.9411764706);
+}
+.conatct-page .row {
+  align-items: center;
+}
+.conatct-page .touch {
+  text-align: center;
+}
+.conatct-page .touch h4 {
+  font-size: 43px;
+  font-weight: 700;
+  color: #333333;
+}
+.conatct-page .mail ul li a {
+  color: #333333;
+}
+.conatct-page .mail ul li a i {
+  background: rgba(223, 170, 27, 0.9411764706);
+  text-align: center;
+  border-radius: 37px;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  padding: 9px;
+  margin: 0 10px;
+  color: #fff;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

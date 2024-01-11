@@ -774,4 +774,100 @@ body#gameOp .dropdown__section {
     padding: 50px 0;
 }
 
+// ABOUT PAGE CSS 
+
+section.hotel-bnr.about {
+    background: url(../images/aboutbnr.avif);
+    @include bg-innr-pro;
+    background-position: top;
+}
+
+// contact page css
+.conatct-page {
+    padding: 50px;
+
+    .contact_us_f {
+
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background: #fff;
+        padding: 50px;
+        max-width: 900px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h2 {
+            font-size: 37px;
+            line-height: 29px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: rgba(223, 170, 27, 0.9411764706);
+        }
+
+        .form_div {
+            display: flex;
+
+            input {
+                width: 100%;
+                padding: 16px;
+                margin-bottom: 28px;
+                margin-right: 14px;
+            }
+        }
+
+        textarea#w3review {
+            width: 100%;
+            padding: 16px;
+            margin-right: 14px;
+        }
+
+        input#sub {
+            padding: 14px 50px;
+            background-color: rgba(223, 170, 27, 0.9411764706);
+            color: #fff;
+            border: none;
+            margin-top: 40px;
+            font-size: 16px;
+            border: 1px solid rgba(223, 170, 27, 0.9411764706);
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: transparent;
+                color: rgba(223, 170, 27, 0.9411764706);
+            }
+        }
+
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .touch {
+        text-align: center;
+
+        h4 {
+            font-size: 43px;
+            font-weight: 700;
+            color: #333333;
+        }
+    }
+
+    .mail ul li a {
+        color: #333333;
+
+        i {
+            background: rgba(223, 170, 27, 0.9411764706);
+            text-align: center;
+            border-radius: 37px;
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+            padding: 9px;
+            margin: 0 10px;
+            color: #fff;
+        }
+    }
+}
+
 /*# sourceMappingURL=style.css.map */

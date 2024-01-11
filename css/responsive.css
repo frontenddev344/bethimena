@@ -20,11 +20,6 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 991px) {
-  section.trusted .trusted-inner .trusted-col {
-    height: auto;
-  }
-}
 @media screen and (max-width: 992px) {
   /*header start*/
   .site-nav {
@@ -160,6 +155,18 @@
   }
   .websitework-picture img {
     height: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  section.trusted .trusted-inner .trusted-col {
+    height: auto;
+  }
+  .form_div {
+    display: flex;
+    flex-direction: column;
+  }
+  .touch {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 767px) {
