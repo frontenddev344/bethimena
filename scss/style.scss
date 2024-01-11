@@ -628,7 +628,7 @@ section.trusted {
 
             h2.title {
                 color: #000;
-                font-size: 20px;
+                font-size: 18px;
                 padding: 0;
                 text-align: center;
                 font-weight: 700;
@@ -707,6 +707,71 @@ section.planning {
             padding: 0 20px 20px 20px;
         }
     }
+}
+
+// Game page css 
+section.hotel-bnr.game {
+    background: url(../images/game.jpg);
+    @include bg-innr-pro;
+}
+
+section.game-description {
+    padding: 50px 0;
+
+    .game-description-one {
+        p {
+            padding: 14px;
+            margin: 0;
+        }
+    }
+
+    .planning-bullet {
+        .bullet-planning {
+            h4 {
+                font-size: 24px;
+                line-height: normal;
+                font-weight: 500;
+                color: #0C0B0B;
+                padding-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: rgba(14, 14, 14, 0.5019607843);
+                    font-family: "Poppins", sans-serif;
+                    padding-bottom: 14px;
+                }
+
+                li.heading {
+                    font-weight: 700;
+                    color: rgba(223, 170, 27, 0.9411764706);
+                }
+
+                li.paralist {
+                    position: relative;
+                    padding-left: 20px;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        background: rgba(223, 170, 27, 0.9411764706);
+                        width: 8px;
+                        height: 8px;
+                        top: 8px;
+                        left: 0;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body#gameOp .dropdown__section {
+    padding: 50px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

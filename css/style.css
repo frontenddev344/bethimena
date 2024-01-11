@@ -627,7 +627,7 @@ section.trusted .trusted-inner .trusted-col {
 }
 section.trusted .trusted-inner .trusted-col h2.title {
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0;
   text-align: center;
   font-weight: 700;
@@ -693,6 +693,67 @@ section.planning .planning-wrapper p {
   color: #333;
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
+}
+
+section.hotel-bnr.game {
+  background: url(../images/game.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  object-fit: cover;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  position: relative;
+}
+
+section.game-description {
+  padding: 50px 0;
+}
+section.game-description .game-description-one p {
+  padding: 14px;
+  margin: 0;
+}
+section.game-description .planning-bullet .bullet-planning h4 {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 500;
+  color: #0C0B0B;
+  padding-bottom: 20px;
+}
+section.game-description .planning-bullet .bullet-planning ul li {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(14, 14, 14, 0.5019607843);
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 14px;
+}
+section.game-description .planning-bullet .bullet-planning ul li.heading {
+  font-weight: 700;
+  color: rgba(223, 170, 27, 0.9411764706);
+}
+section.game-description .planning-bullet .bullet-planning ul li.paralist {
+  position: relative;
+  padding-left: 20px;
+}
+section.game-description .planning-bullet .bullet-planning ul li.paralist::before {
+  position: absolute;
+  content: "";
+  background: rgba(223, 170, 27, 0.9411764706);
+  width: 8px;
+  height: 8px;
+  top: 8px;
+  left: 0;
+  border-radius: 50%;
+}
+
+body#gameOp .dropdown__section {
+  padding: 50px 0;
 }
 
 
