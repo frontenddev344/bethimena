@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
     <title>Σχετικά με</title>
@@ -51,7 +52,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="banner-content">
+                    <div class="banner-content" data-aos="fade-up">
                         <h2>Σχετικά με</h2>
                     </div>
                 </div>
@@ -61,7 +62,7 @@
     <!-- site banner end -->
     <section class="game-description">
         <div class="container">
-            <div class="game-description-one">
+            <div class="game-description-one" data-aos="fade-up">
                 <p>Θα θέλαμε πολύ να ακούσουμε από εσάς. Μη διστάσετε να επικοινωνήσετε με οποιεσδήποτε ερωτήσεις ή
                     αιτήματα μπορεί να έχετε. Η ομάδα μας δεσμεύεται να παρέχει ακριβείς και ολοκληρωμένες πληροφορίες,
                     εξασφαλίζοντας μια απρόσκοπτη και ευχάριστη εμπειρία για εσάς.
@@ -79,8 +80,8 @@
 
     <section class="conatct-page">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-6" data-aos="fade-right">
                     <div class="contact_us_f">
                         <h2>Φόρμα Επικοινωνίας
                         </h2>
@@ -103,7 +104,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="touch">
+                    <div class="touch" data-aos="fade-left">
                         <h4>Ελάτε σε επαφή μαζί μας</h4>
                         <div class="mail">
                             <ul>
@@ -119,7 +120,7 @@
     </section>
     <section class="game-description">
         <div class="container">
-            <div class="game-description-one">
+            <div class="game-description-one" data-aos="fade-right">
                 <p>Για συγκεκριμένες ερωτήσεις ή εξατομικευμένα αιτήματα, συμπληρώστε τη φόρμα επικοινωνίας παρακάτω. Η
                     ομάδα μας θα απαντήσει το συντομότερο δυνατό.
                 </p>
@@ -205,6 +206,12 @@
                 header.toggleClass("sticky", $(window).scrollTop() > 0);
             });
         });
+    </script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
     </script>
 
 </body>

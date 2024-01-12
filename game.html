@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <title>Παιχνίδι</title>
 </head>
@@ -49,7 +50,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="banner-content">
+                    <div class="banner-content" data-aos="fade-up">
                         <h2>Παιχνίδι</h2>
 
                     </div>
@@ -61,7 +62,7 @@
     <!--game-description -->
     <section class="game-description">
         <div class="container">
-            <div class="game-description-one">
+            <div class="game-description-one" data-aos="fade-up">
                 <p>Μπείτε στο κορυφαίο καταφύγιο για τους λάτρεις της χλιδής και της συγκίνησης του παιχνιδιού! Η
                     πλατφόρμα σύγκρισης ξενοδοχείων καζίνο μας χρησιμεύει ως η πύλη σας σε ένα βασίλειο όπου τα πολυτελή
                     καταλύματα συνδυάζονται άψογα με τις σαγηνευτικές περιπέτειες τυχερών παιχνιδιών. Βυθιστείτε σε έναν
@@ -80,7 +81,7 @@
                     συγχωνεύεται άψογα με τη γοητεία των πολυτελών καταλυμάτων. Συγκρίνετε τα καλύτερα ξενοδοχεία καζίνο
                     στην Ελλάδα με ένα πάτημα ενός κουμπιού. </p>
             </div>
-            <div class="planning-bullet">
+            <div class="planning-bullet" data-aos="fade-up">
                 <div class="bullet-planning">
                     <h4>Επιλέγοντας το σωστό ξενοδοχείο καζίνο</h4>
 
@@ -120,12 +121,12 @@
     <!-- The best casino hotels in Greece -->
     <section class="trusted">
         <div class="container">
-            <div class="trusted-wrapper">
+            <div class="trusted-wrapper" data-aos="fade-up">
                 <h3>Τα καλύτερα ξενοδοχεία καζίνο στην Ελλάδα
                 </h3>
             </div>
-            <div class="trusted-inner">
-                <div class="row">
+            <div class="trusted-inner" >
+                <div class="row" data-aos="fade-up">
                     <div class="col-lg-3">
                         <div class="trusted-col">
                             <div class="img1">
@@ -309,7 +310,12 @@
             });
         });
     </script>
-
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>

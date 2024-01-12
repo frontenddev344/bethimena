@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
     <title>Θέρετρα</title>
@@ -51,7 +52,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="banner-content">
+                    <div class="banner-content"  data-aos="fade-up">
                         <h2>Θέρετρα</h2>
                     </div>
                 </div>
@@ -61,7 +62,7 @@
     <!-- site banner end -->
     <section class="game-description">
         <div class="container">
-            <div class="game-description-one">
+            <div class="game-description-one"  data-aos="fade-up">
                 <p>Μπείτε σε έναν κόσμο χλιδής και συγκίνησης μέσα στη σφαίρα του τυχερού παιχνιδιού και της φιλοξενίας
                     με τον ολοκληρωμένο οδηγό μας που είναι αφιερωμένος στην προβολή των πιο εξωφρενικών και
                     συναρπαστικών ξενοδοχείων καζίνο παγκοσμίως. Βυθιστείτε σε ένα ταξίδι όπου η γοητεία των παιχνιδιών
@@ -87,7 +88,7 @@
     <section class="trusted">
         <div class="container">
             <div class="trustedmate">
-                <div class="trusted-wrapper">
+                <div class="trusted-wrapper"  data-aos="fade-up">
                     <h3>Τα καλύτερα ξενοδοχεία καζίνο στον κόσμο </h3>
                     <p>ΤΤο Μονακό, γνωστό για την πολυπλοκότητά του και τη γοητεία της Γαλλικής Ριβιέρας, φιλοξενεί
                         μερικά
@@ -95,7 +96,7 @@
                         καλύτερα ξενοδοχεία καζίνο στο Μονακό:
                     </p>
                 </div>
-                <div class="trusted-inner">
+                <div class="trusted-inner"  data-aos="fade-up">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="trusted-col">
@@ -154,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <div class="trustedmate malton">
+            <div class="trustedmate malton"  data-aos="fade-up">
                 <div class="trusted-wrapper">
                     <p>Το Λας Βέγκας, που αναγνωρίζεται ως η «Πρωτεύουσα της Ψυχαγωγίας του Κόσμου», φιλοξενεί μερικά
                         από τα πιο πολυτελή και εμβληματικά ξενοδοχεία καζίνο. Παρακάτω, επισημαίνουμε μερικά από τα
@@ -213,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="trustedmate malton">
+            <div class="trustedmate malton"  data-aos="fade-up">
                 <div class="trusted-wrapper">
                     <p>Το Ο Λας Βέγκας, γνωστός και ως η "Πρωτεύουσα της Διασκέδασης του Κόσμου", φιλοξενεί μερικά από
                         τα πιο πολυτελή και εμβληματικά καζίνο ξενοδοχεία. Εδώ παρουσιάζουμε μερικά από τα κορυφαία
@@ -387,7 +388,12 @@
             });
         });
     </script>
-
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>
