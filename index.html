@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <title>στοίχημαένα</title>
 </head>
@@ -50,7 +51,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="banner-content">
+          <div class="banner-content" data-aos="fade-up">
             <h1>Εξαιρετικά ξενοδοχεία και <span class="pt-2">θέρετρα καζίνο </span></h1>
             <p>Ξεκινήστε μια περιπέτεια γεμάτη πολυτέλεια και ενθουσιασμό με το στοίχημαένα.com. Εξερευνήστε τον απόλυτο
               οδηγό μας για την αξιολόγηση των καλύτερων ξενοδοχείων και καζίνο θέρετρων στην Ελλάδα και σε όλο τον
@@ -68,9 +69,9 @@
   <!-- site websitework start -->
   <section class="websitework">
     <div class="container">
-      <div class="row flex-wrap-reverse">
+      <div class="row flex-wrap-reverse" data-aos="fade-up">
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="websitework-content">
+          <div class="websitework-content" data-aos="fade-right">
             <h2>Πώς λειτουργεί ο Ιστότοπός μας</h2>
             <p><span>Περιηγηθείτε και συγκρίνετε: </span>Εξερευνήστε την επιμελημένη συλλογή μας και συγκρίνετε
               ξενοδοχεία και θέρετρα καζίνο με βάση τις προτιμήσεις σας.</p>
@@ -84,7 +85,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="websitework-picture">
+          <div class="websitework-picture" data-aos="fade-left">
             <img src="images/websitework-img.jpg" alt="websitework" class="img-fluid">
           </div>
         </div>
@@ -95,7 +96,7 @@
 
   <!-- site hotels start -->
   <section class="hotels">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="row">
         <h2>Τα καλύτερα ξενοδοχεία στην Ελλάδα</h2>
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -302,7 +303,12 @@
       });
     });
   </script>
-
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
 
 
 

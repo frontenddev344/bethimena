@@ -641,6 +641,13 @@ section.trusted {
                 margin-bottom: 0;
                 padding: 0 20px 20px 20px;
             }
+
+            .img1 {
+                img {
+                    height: 275px;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

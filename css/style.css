@@ -639,6 +639,10 @@ section.trusted .trusted-inner .trusted-col p {
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
 }
+section.trusted .trusted-inner .trusted-col .img1 img {
+  height: 275px;
+  object-fit: cover;
+}
 
 section.collection-hotels {
   padding: 50px 0;
