@@ -888,6 +888,26 @@ body#resorts .dropdown__section {
   margin-top: 3rem;
 }
 
+a.knsl-btn {
+  background: #e0af28;
+  padding: 12px;
+  display: inline-block;
+  margin-top: 11px;
+  color: #fff;
+  border: 1px solid #e0af28;
+  transition: all 0.3s ease-in-out;
+}
+
+a.knsl-btn:hover {
+  background-color: transparent;
+  border: 1px solid #e0af28;
+  color: #e0af28;
+}
+
+.trusted-inner p {
+  margin-top: 50px;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

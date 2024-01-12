@@ -183,6 +183,9 @@
   section.collection-hotels .collection-wrapper .collection-about-photo img {
     height: 250px;
   }
+  .row.cuisine {
+    padding: 0px 0 30px;
+  }
 }
 @media screen and (max-width: 575px) {
   .site-nav {
