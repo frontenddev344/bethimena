@@ -143,6 +143,7 @@ section.homebanner {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 
     &::before {
         position: absolute;
@@ -173,6 +174,7 @@ section.homebanner {
 /*websitework-css-start*/
 section.websitework {
     padding: 30px 0;
+    overflow: hidden;
 }
 
 .websitework-content {
@@ -567,6 +569,7 @@ h2#headingTwo {
 section.hotel-bnr {
     background: url(../images/hotel-bnr.jpg);
     @include bg-innr-pro;
+    overflow: hidden;
 
     &::after {
         content: "";
@@ -894,6 +897,10 @@ body#resorts .trusted-wrapper p {
 
 .trustedmate.malton {
     margin-top: 50px;
+}
+
+body#resorts .dropdown__section {
+    margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
