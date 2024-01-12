@@ -908,6 +908,10 @@ a.knsl-btn:hover {
   margin-top: 50px;
 }
 
+section.game-description .game-description-one span {
+  padding: 16px;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
