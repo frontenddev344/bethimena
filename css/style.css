@@ -719,6 +719,7 @@ section.hotel-bnr.game {
 
 section.game-description {
   padding: 50px 0;
+  overflow: hidden;
 }
 section.game-description .game-description-one p {
   padding: 14px;
@@ -781,6 +782,7 @@ section.hotel-bnr.about {
 
 .conatct-page {
   padding: 50px;
+  overflow: hidden;
 }
 .conatct-page .contact_us_f {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
