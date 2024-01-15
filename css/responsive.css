@@ -1,4 +1,17 @@
 /*media queries start*/
+@media screen and (max-width: 1290px) {
+  .websitework-content p::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #0C0B0B;
+    right: auto;
+    left: -7px;
+    top: 12px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .container {
     padding: 0 20px;
